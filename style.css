@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+li{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+nav h2{
+    font-family: monospace;
+    letter-spacing: 2px;
+    border: 2px solid #000;
+    font-weight: 800;
+    padding: 0px 8px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.main-content{
+    min-height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 100px;
+    margin: 30px 0px;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+}
+.hero-text h1{
+    font-size: 60px;
+}
+.hero-text p{
+    font-size: 25px;
+}
+.hero-img{
+    height: 100%;
+    width: 50%;
+    background-image: url('friends.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+.banner-images{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('nature.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.banner-images div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 0px 40px;
+    color: rgba(255, 255, 255, 0.799);
+    font-size: 50px;
+    transition: all ease 0.4s;
+}
+.prev:hover{
+    color: white;
+    background: linear-gradient(to right,#000000dd,transparent);
+}
+.next:hover{
+    color: white;
+    background: linear-gradient(to left,#000000dd,transparent);
+}
+.banner-images h3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    bottom: 20px;
+    left: 80px;
+    font-size: 80px;
+    font-weight: 700;
+}
+.card-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 250px;
+    height: 90%;
+    overflow: hidden;
+    border: 2px solid #dadada;
+}
+.card-img{
+    height: 50%;
+    width: 100%;
+    background-image: url('card-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-content{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.card-para{
+    
+}
+.read-more{
+    align-self:end;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    width: fit-content;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+.footer-section{
+    height: 400px;
+    width: 100%;
+    background-image: url('footer-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-content{
+    height: 100%;
+    width: 100%;
+    background-color: #000000bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.footer-content ul{
+    height: 90%;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ul li a{
+    color: #fff;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+.footer-logo{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 7px;
+    padding: 7px 14px;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    font-family: monospace;
+}
