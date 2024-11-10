@@ -85,5 +85,13 @@
             <h1 class="footer-logo">Blog Zone</h1>
         </div>
     </footer>
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+        document.onkeydown = function (e) {
+          if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || (e.ctrlKey && e.key === "U")) {
+            return false;
+          }
+        };
+      </script>
 </body>
 </html>
